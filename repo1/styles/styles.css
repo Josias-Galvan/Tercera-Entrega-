@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Permanent+Marker&display=swap");
+h1, h2, h3 {
+  color: violet;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  border: 1px;
+  padding: 10px;
+  border-style: solid;
+  margin-top: 30%;
+}
+
+p {
+  color: white;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+}
+body {
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-image: url("../img/background.jpg");
+}
+body nav div a {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body nav div a button {
+  width: 100px;
+  height: 30px;
+  color: grey;
+  background: -webkit-gradient(linear, left bottom, left top, from(pink), to(violet));
+  background: linear-gradient(to top, pink, violet);
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+  -webkit-transition: background 3s;
+  transition: background 3s;
+}
+body nav div a button button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(violet), to(pink));
+  background: linear-gradient(to top, violet, pink);
+  color: black;
+  cursor: pointer;
+}
+
+body section .article h1 {
+  -webkit-text-decoration: bisque;
+          text-decoration: bisque;
+}
+
+body section article h2 {
+  font-size: 1rem;
+  font-family: "Oxygen", sans-serif;
+}
+
+body footer a img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.h2, .grid-container section article h2 {
+  font-size: 4rem;
+  font-family: "Oxygen", sans-serif;
+}
+
+:root {
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secundary-color: #F7C331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3A4460;
+}
+article .parrafo{
+  z-index: 1;
+  width: 70%;
+  height: auto;
+  padding: 20px 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  background:none;
+  box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+  border-radius: 3px;
+  text-align: center;
+}
+article .parrafo img{
+  width: 310px;
+  border-radius: 3px;
+  float: right;
+  margin-right: 15px;
+}
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  grid-template: "header"  100px
+ "navbar"  50px
+ "main"    auto
+ "sidebar" 100px
+ "footer"  100px;
+}
+
+.grid-container .grid-container {
+  padding: 10px;
+  margin: none;
+  grid-area: none;
+  -webkit-box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.grid-container html {
+  height: 100%;
+}
+
+.grid-container body {
+  font-size: 1.2rem;
+  min-height: 100%;
+  background-image: url("../img/background.jpg");
+}
+
+.grid-container body p {
+  text-align: center;
+  padding: 0%;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+.grid-container body h1 {
+  font-size: 2rem;
+  -webkit-text-decoration-color: #e5e5e5;
+          text-decoration-color: #e5e5e5;
+  text-align: center;
+}
+
+.grid-container body nav {
+  grid-area: navbar;
+}
+
+.grid-container body nav div a .nav div a:hover {
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-weight: 600;
+}
+
+.grid-container body nav div ul li button {
+  padding: 15px 32px;
+  margin: 4px 7px;
+  font-size: 18px;
+  border-radius: 6em;
+  border: 1px solid;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 6px 6px 12px
+ -6px -6px 12px;
+          box-shadow: 6px 6px 12px
+ -6px -6px 12px;
+}
+
+.grid-container body nav div ul li button:hover {
+  border: 1px solid;
+}
+
+.grid-container body nav div ul li button:active {
+  -webkit-box-shadow: 4px 4px 12px ,
+ -4px -4px 12px;
+          box-shadow: 4px 4px 12px ,
+ -4px -4px 12px;
+}
+
+.grid-container .footer {
+  padding: 0%;
+  margin: auto;
+  grid-area: none;
+}
+
+.grid-container .footer .pie {
+  /*padding*/
+  padding: 30px;
+}
+
+.grid-container .footer .pie__icon--sm {
+  /*size*/
+  width: 30px;
+  /*ancho*/
+}
+
+.grid-container .footer .pie__titulo--md {
+  /*display*/
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+.grid-container .footer .pie a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.grid-container .footer h3 {
+  text-align: center;
+  padding: 0%;
+  font-size: 2rem;
+  color: #e5e5e5;
+}
+
+.grid-container .footer img {
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=styles.css.map */

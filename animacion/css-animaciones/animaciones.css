@@ -1,0 +1,139 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*fondos colores*/
+
+.bg-dark{
+	background-color: #262525
+}
+
+.bg-danger{
+	background-color: #C11111
+}
+
+.bg-info{
+	background-color: #0065c3
+}
+
+.bg-success{
+	background-color: #12E73F
+}
+
+.bg-warning{
+	background-color: #E76424
+}
+
+/*end fondos */
+
+
+section{
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+
+div{
+	color: black;
+	font-size: 2em;
+	border:solid 1px white;
+	border-radius: 5px;
+	margin: 30px;
+	height: 30vh;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+}
+
+
+/* clases para los temas de hoy*/
+
+.linear-gradient{
+	background:radial-gradient(circle,  pink, violet, white);
+}
+
+.transform:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+.rotate:hover{
+	transform: rotateZ(360deg);
+	cursor: pointer;
+	transition: transform 3s;
+}
+
+.scale:hover{
+	transform: scale(0.8);
+	cursor: pointer;
+	transition: transform 3s;
+}
+
+.skew{
+	transform: skewY(10deg);
+	cursor: pointer;
+	transition: transform 3s;
+}
+
+@keyframes animateDiv{
+	0%{width: 100px}
+	25%{width: 200px}
+	50%{width: 300px}
+	75%{width: 400px;background-color: red;}
+	100%{width: 200px; background-color: green;}
+}
+
+.animate{
+	animation-name: animateDiv;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+	animation-delay: 0s;
+}
+
+
+.transition{
+	width: 100px;
+	height: 200px;
+	background-color: orange;
+	transition: width 3s;
+}
+
+.transition:hover{
+	width: 300px;
+	cursor: pointer;
+}
+
+@keyframes textAlpha{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+
+h3{
+	animation-name: textAlpha;
+	animation-duration: 5s;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+	color: grey;
+	background: linear-gradient(to top, pink, violet);
+	text-align: center;
+	border: 0;
+	border-radius: 3px;
+	transition: background 3s;
+}
+
+button:hover{
+	background: linear-gradient(to top, violet, pink);
+	color: black;
+	cursor: pointer;
+}
